@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-image: url("../utilities/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 500px;
+}
+
+header .title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+
+header .title .text{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+header .title .text{
+    font-size: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    padding: 20px 60px;
+}
+
+header .title .text h1,
+header .title .text p{
+    color: #fff;
+    margin: 0;
+}
+
+.menu {
+    padding: 5px 15px;
+    text-align: right;
+}
+
+.menu li{
+    padding: 5px;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li:hover{
+    border-bottom: 2px solid #fff;
+}
+
+section article h2{
+    text-align: center;
+    padding: 50px;
+}
+
+section article{
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section .vision{
+    background: #f2f2f2;
+}
+
+section .img{
+    display: flex;
+    align-content: center;
+    margin: 20px;
+}
+
+section .img img{
+    border-radius: 50%;
+    width: 450px;
+}
+
+section .img .hello{
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    font-family: cursive;
+}
+
+footer{
+    background: #1e2b38;
+}
+
+footer .links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media{
+    padding: 60px 0;
+}
+
+footer .links a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+.social-media .facebook:hover{
+    background: #1877f2;
+}
+
+.social-media .instagram:hover{
+    background: #fd1d1d;
+}
+
+.social-media .whatsapp:hover{
+    background: #25d366;
+}
+
+/*------------------------------------ RESPONSIVE ---------------------*/
+
+@media screen and (max-width: 800px){
+    header .menu{
+        text-align: center;
+    }
+
+    header .title{
+        margin: 190px 0;
+    }
+    
+    header .title .text{
+        font-size: 25px;
+        padding: 10px 30px;
+    }
+
+    section .img img{
+        border-radius: 25%;
+        width: 225px;
+    }
+
+    section .img .hello{
+        height: 100px;
+        line-height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .title .text{
+        font-size: 30px;
+        padding: 5px 15px;
+    }
+    
+    section .img img{
+        border-radius: 10.5%;
+        width: 120.5px;
+    }
+
+    section .img .hello{
+        height: 20px;
+        line-height: 20px;
+    }
+}
